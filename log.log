@@ -1,1 +1,17 @@
-abc
+2020-06-06 11:26:15,566  31 <module>         __main__
+2020-06-06 11:26:15,566  32 <module>         ##########################################################
+2020-06-06 11:26:15,567  33 <module>         #                        start                           #
+2020-06-06 11:26:15,567  34 <module>         ##########################################################
+2020-06-06 11:26:15,567  53 <module>         
+2020-06-06 11:26:15,567  54 <module>         ###################### lgbm start ########################
+2020-06-06 11:26:15,567  75 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}
+2020-06-06 11:26:15,567  82 <module>         {'n_fold': 1, 'first_day': 1000}
+2020-06-06 11:26:15,567  29 load_data        load_data start
+2020-06-06 11:26:18,437 141 _init_num_threads NumExpr defaulting to 8 threads.
+2020-06-06 11:26:18,481  51 load_data        start_day:1000
+2020-06-06 11:26:21,151  60 load_data        self.dt_org.shape:(30490, 920)
+2020-06-06 11:26:21,151  61 load_data        load_data end
+2020-06-06 11:26:21,151  55 run_train_cv     lgbm - start training cv
+2020-06-06 11:26:21,151  64 run_train_cv     lgbm fold 0 - start training
+2020-06-06 11:26:21,151 111 train_fold       learning start
+2020-06-06 11:26:21,151  67 create_dt        start_day:350
