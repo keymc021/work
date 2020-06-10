@@ -1,10 +1,20 @@
-2020-06-10 11:59:14,649  31 <module>         __main__
-2020-06-10 11:59:14,649  32 <module>         ##########################################################
-2020-06-10 11:59:14,649  33 <module>         #                        start                           #
-2020-06-10 11:59:14,649  34 <module>         ##########################################################
-2020-06-10 11:59:14,650  54 <module>         ###################### lgbm_p start ########################
-2020-06-10 11:59:14,650  63 <module>         {'n_fold': 1, 'first_day': 350, 'alphas': [1.028]}
-2020-06-10 11:59:14,650  87 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}
-2020-06-10 11:59:14,650  34 load_data        load_data start
-2020-06-10 11:59:17,607 141 _init_num_threads NumExpr defaulting to 8 threads.
-2020-06-10 11:59:17,652  56 load_data        start_day:350
+2020-06-10 12:01:08,998  31 <module>         __main__
+2020-06-10 12:01:08,998  32 <module>         ##########################################################
+2020-06-10 12:01:08,999  33 <module>         #                        start                           #
+2020-06-10 12:01:08,999  34 <module>         ##########################################################
+2020-06-10 12:01:08,999  54 <module>         ###################### lgbm_p start ########################
+2020-06-10 12:01:08,999  63 <module>         {'n_fold': 1, 'first_day': 350, 'alphas': [1.028]}
+2020-06-10 12:01:08,999  87 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}
+2020-06-10 12:01:08,999  34 load_data        load_data start
+2020-06-10 12:01:11,771 141 _init_num_threads NumExpr defaulting to 8 threads.
+2020-06-10 12:01:11,814  56 load_data        start_day:350
+2020-06-10 12:01:20,493  66 load_data        self.dt_org.shape:(30490, 1542)
+2020-06-10 12:01:20,494  67 load_data        load_data end
+2020-06-10 12:01:20,494  58 run_train_cv     lgbm_p - start training cv
+2020-06-10 12:01:20,494  67 run_train_cv     lgbm_p fold 0 - start training
+2020-06-10 12:01:20,494 114 train_fold       learning start
+2020-06-10 12:01:20,494  73 create_dt        start_day:350
+2020-06-10 12:01:20,730  81 create_dt        dt.shape:(30490, 1542)
+2020-06-10 12:01:20,735 100 create_dt        dt.melt dt.merge
+2020-06-10 12:01:44,781 121 create_dt        create_dt end
+2020-06-10 12:04:47,711  82 train            choice_size: 2000000
