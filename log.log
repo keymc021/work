@@ -1,131 +1,68 @@
-2020-06-10 12:11:26,437  31 <module>         __main__
-2020-06-10 12:11:26,438  32 <module>         ##########################################################
-2020-06-10 12:11:26,438  33 <module>         #                        start                           #
-2020-06-10 12:11:26,438  34 <module>         ##########################################################
-2020-06-10 12:11:26,438  54 <module>         ###################### lgbm_p start ########################
-2020-06-10 12:11:26,438  63 <module>         {'n_fold': 1, 'first_day': 350, 'alphas': [1.028]}
-2020-06-10 12:11:26,438  87 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}
-2020-06-10 12:11:26,438  34 load_data        load_data start
-2020-06-10 12:11:29,366 141 _init_num_threads NumExpr defaulting to 8 threads.
-2020-06-10 12:11:29,423  56 load_data        start_day:350
-2020-06-10 12:11:38,284  66 load_data        self.dt_org.shape:(30490, 1542)
-2020-06-10 12:11:38,284  67 load_data        load_data end
-2020-06-10 12:11:38,284  58 run_train_cv     lgbm_p - start training cv
-2020-06-10 12:11:38,285  67 run_train_cv     lgbm_p fold 0 - start training
-2020-06-10 12:11:38,285 114 train_fold       learning start
-2020-06-10 12:11:38,285  73 create_dt        start_day:350
-2020-06-10 12:11:38,560  81 create_dt        dt.shape:(30490, 1542)
-2020-06-10 12:11:38,566 100 create_dt        dt.melt dt.merge
-2020-06-10 12:12:02,823 121 create_dt        create_dt end
-2020-06-10 12:15:04,310  82 train            choice_size: 2000000
-2020-06-10 13:18:59,943  69 run_train_cv     lgbm_p fold 0 - end training - score 0
-2020-06-10 13:19:02,214  86 run_train_cv     lgbm_p - end training cv - score 0.0
-2020-06-10 13:19:02,217 153 run_predict_cv   ######## lgbm_p - start prediction cv ######## 
-2020-06-10 13:19:02,217 159 run_predict_cv   ######## lgbm_p - start prediction fold:0 
-2020-06-10 13:19:02,679  73 create_dt        start_day:1828
-2020-06-10 13:19:02,706  81 create_dt        dt.shape:(30490, 64)
-2020-06-10 13:19:02,723 100 create_dt        dt.melt dt.merge
-2020-06-10 13:19:05,406 121 create_dt        create_dt end
-2020-06-10 13:19:06,123 173 predict          predict icount:0 alpha:1.028
-2020-06-10 13:19:06,278 179 predict          predict tdelta:0, day: 2016-03-28 00:00:00
-2020-06-10 13:19:09,404 179 predict          predict tdelta:1, day: 2016-03-29 00:00:00
-2020-06-10 13:19:12,207 179 predict          predict tdelta:2, day: 2016-03-30 00:00:00
-2020-06-10 13:19:15,000 179 predict          predict tdelta:3, day: 2016-03-31 00:00:00
-2020-06-10 13:19:17,843 179 predict          predict tdelta:4, day: 2016-04-01 00:00:00
-2020-06-10 13:19:20,592 179 predict          predict tdelta:5, day: 2016-04-02 00:00:00
-2020-06-10 13:19:23,320 179 predict          predict tdelta:6, day: 2016-04-03 00:00:00
-2020-06-10 13:19:26,087 179 predict          predict tdelta:7, day: 2016-04-04 00:00:00
-2020-06-10 13:19:28,845 179 predict          predict tdelta:8, day: 2016-04-05 00:00:00
-2020-06-10 13:19:31,616 179 predict          predict tdelta:9, day: 2016-04-06 00:00:00
-2020-06-10 13:19:34,395 179 predict          predict tdelta:10, day: 2016-04-07 00:00:00
-2020-06-10 13:19:37,165 179 predict          predict tdelta:11, day: 2016-04-08 00:00:00
-2020-06-10 13:19:39,947 179 predict          predict tdelta:12, day: 2016-04-09 00:00:00
-2020-06-10 13:19:42,688 179 predict          predict tdelta:13, day: 2016-04-10 00:00:00
-2020-06-10 13:19:45,410 179 predict          predict tdelta:14, day: 2016-04-11 00:00:00
-2020-06-10 13:19:48,140 179 predict          predict tdelta:15, day: 2016-04-12 00:00:00
-2020-06-10 13:19:50,875 179 predict          predict tdelta:16, day: 2016-04-13 00:00:00
-2020-06-10 13:19:53,603 179 predict          predict tdelta:17, day: 2016-04-14 00:00:00
-2020-06-10 13:19:56,348 179 predict          predict tdelta:18, day: 2016-04-15 00:00:00
-2020-06-10 13:19:59,080 179 predict          predict tdelta:19, day: 2016-04-16 00:00:00
-2020-06-10 13:20:01,817 179 predict          predict tdelta:20, day: 2016-04-17 00:00:00
-2020-06-10 13:20:04,541 179 predict          predict tdelta:21, day: 2016-04-18 00:00:00
-2020-06-10 13:20:07,267 179 predict          predict tdelta:22, day: 2016-04-19 00:00:00
-2020-06-10 13:20:10,014 179 predict          predict tdelta:23, day: 2016-04-20 00:00:00
-2020-06-10 13:20:12,809 179 predict          predict tdelta:24, day: 2016-04-21 00:00:00
-2020-06-10 13:20:15,544 179 predict          predict tdelta:25, day: 2016-04-22 00:00:00
-2020-06-10 13:20:18,258 179 predict          predict tdelta:26, day: 2016-04-23 00:00:00
-2020-06-10 13:20:20,983 179 predict          predict tdelta:27, day: 2016-04-24 00:00:00
-2020-06-10 13:20:24,686 225 predict          icount:0, alpha:1.028, weight:1.0
-2020-06-10 13:20:24,931 240 predict          all row: 60980 , validation row: 30490
-2020-06-10 13:20:25,594 177 run_predict_cv   <score_RMSE>: 2.3200627005286125
-2020-06-10 13:20:25,594 186 run_predict_cv   evaluator:WRMSSEE
-2020-06-10 13:20:43,516 189 run_predict_cv   evaluator.score
-2020-06-10 13:22:37,949 191 run_predict_cv   <score_WRMSSE>0.7123559102037661 <score_RMSE>2.3200627005286125
-2020-06-10 13:22:37,949 193 run_predict_cv   params :{'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}  params_env :{'n_fold': 1, 'first_day': 350, 'alphas': [1.028]}
-2020-06-10 13:22:38,000 203 run_predict_cv   ######## lgbm_p - end prediction fold:0 
-2020-06-10 13:22:38,492 207 run_predict_cv   ######## lgbm_p - end prediction cv ######## 
-2020-06-10 13:22:41,245  97 <module>         ###################### lgbm_p end ########################
-2020-06-10 13:22:41,246  98 <module>         
-2020-06-10 13:22:41,246 108 <module>         ###################### lgbm start ########################
-2020-06-10 13:22:41,246 117 <module>         {'n_fold': 1, 'first_day': 350, 'alphas': [1.0]}
-2020-06-10 13:22:41,246 141 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}
-2020-06-10 13:22:41,246  34 load_data        load_data start
-2020-06-10 13:22:44,346  56 load_data        start_day:350
-2020-06-10 13:22:53,216  66 load_data        self.dt_org.shape:(30490, 1542)
-2020-06-10 13:22:53,216  67 load_data        load_data end
-2020-06-10 13:22:53,230  58 run_train_cv     lgbm - start training cv
-2020-06-10 13:22:53,230  67 run_train_cv     lgbm fold 0 - start training
-2020-06-10 13:22:53,230 114 train_fold       learning start
-2020-06-10 13:22:53,230  73 create_dt        start_day:350
-2020-06-10 13:22:53,382  81 create_dt        dt.shape:(30490, 1542)
-2020-06-10 13:22:53,388 100 create_dt        dt.melt dt.merge
-2020-06-10 13:23:20,820 121 create_dt        create_dt end
-2020-06-10 13:26:24,257  82 train            choice_size: 2000000
-2020-06-10 14:27:28,355  69 run_train_cv     lgbm fold 0 - end training - score 0
-2020-06-10 14:27:30,567  86 run_train_cv     lgbm - end training cv - score 0.0
-2020-06-10 14:27:30,571 153 run_predict_cv   ######## lgbm - start prediction cv ######## 
-2020-06-10 14:27:30,571 159 run_predict_cv   ######## lgbm - start prediction fold:0 
-2020-06-10 14:27:31,038  73 create_dt        start_day:1828
-2020-06-10 14:27:31,066  81 create_dt        dt.shape:(30490, 64)
-2020-06-10 14:27:31,083 100 create_dt        dt.melt dt.merge
-2020-06-10 14:27:33,931 121 create_dt        create_dt end
-2020-06-10 14:27:34,649 173 predict          predict icount:0 alpha:1.0
-2020-06-10 14:27:34,808 179 predict          predict tdelta:0, day: 2016-03-28 00:00:00
-2020-06-10 14:27:37,742 179 predict          predict tdelta:1, day: 2016-03-29 00:00:00
-2020-06-10 14:27:40,435 179 predict          predict tdelta:2, day: 2016-03-30 00:00:00
-2020-06-10 14:27:43,153 179 predict          predict tdelta:3, day: 2016-03-31 00:00:00
-2020-06-10 14:27:45,873 179 predict          predict tdelta:4, day: 2016-04-01 00:00:00
-2020-06-10 14:27:48,568 179 predict          predict tdelta:5, day: 2016-04-02 00:00:00
-2020-06-10 14:27:51,239 179 predict          predict tdelta:6, day: 2016-04-03 00:00:00
-2020-06-10 14:27:53,894 179 predict          predict tdelta:7, day: 2016-04-04 00:00:00
-2020-06-10 14:27:56,573 179 predict          predict tdelta:8, day: 2016-04-05 00:00:00
-2020-06-10 14:27:59,275 179 predict          predict tdelta:9, day: 2016-04-06 00:00:00
-2020-06-10 14:28:01,962 179 predict          predict tdelta:10, day: 2016-04-07 00:00:00
-2020-06-10 14:28:04,674 179 predict          predict tdelta:11, day: 2016-04-08 00:00:00
-2020-06-10 14:28:07,345 179 predict          predict tdelta:12, day: 2016-04-09 00:00:00
-2020-06-10 14:28:10,026 179 predict          predict tdelta:13, day: 2016-04-10 00:00:00
-2020-06-10 14:28:12,714 179 predict          predict tdelta:14, day: 2016-04-11 00:00:00
-2020-06-10 14:28:15,421 179 predict          predict tdelta:15, day: 2016-04-12 00:00:00
-2020-06-10 14:28:18,119 179 predict          predict tdelta:16, day: 2016-04-13 00:00:00
-2020-06-10 14:28:20,807 179 predict          predict tdelta:17, day: 2016-04-14 00:00:00
-2020-06-10 14:28:23,512 179 predict          predict tdelta:18, day: 2016-04-15 00:00:00
-2020-06-10 14:28:26,223 179 predict          predict tdelta:19, day: 2016-04-16 00:00:00
-2020-06-10 14:28:28,965 179 predict          predict tdelta:20, day: 2016-04-17 00:00:00
-2020-06-10 14:28:31,642 179 predict          predict tdelta:21, day: 2016-04-18 00:00:00
-2020-06-10 14:28:34,344 179 predict          predict tdelta:22, day: 2016-04-19 00:00:00
-2020-06-10 14:28:37,058 179 predict          predict tdelta:23, day: 2016-04-20 00:00:00
-2020-06-10 14:28:39,763 179 predict          predict tdelta:24, day: 2016-04-21 00:00:00
-2020-06-10 14:28:42,439 179 predict          predict tdelta:25, day: 2016-04-22 00:00:00
-2020-06-10 14:28:45,095 179 predict          predict tdelta:26, day: 2016-04-23 00:00:00
-2020-06-10 14:28:47,761 179 predict          predict tdelta:27, day: 2016-04-24 00:00:00
-2020-06-10 14:28:51,323 225 predict          icount:0, alpha:1.0, weight:1.0
-2020-06-10 14:28:51,548 240 predict          all row: 60980 , validation row: 30490
-2020-06-10 14:28:51,956 177 run_predict_cv   <score_RMSE>: 2.302706147363559
-2020-06-10 14:28:51,957 186 run_predict_cv   evaluator:WRMSSEE
-2020-06-10 14:29:13,384 189 run_predict_cv   evaluator.score
-2020-06-10 14:31:08,638 191 run_predict_cv   <score_WRMSSE>0.6948321824882787 <score_RMSE>2.302706147363559
-2020-06-10 14:31:08,638 193 run_predict_cv   params :{'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}  params_env :{'n_fold': 1, 'first_day': 350, 'alphas': [1.0]}
-2020-06-10 14:31:08,690 203 run_predict_cv   ######## lgbm - end prediction fold:0 
-2020-06-10 14:31:09,184 207 run_predict_cv   ######## lgbm - end prediction cv ######## 
-2020-06-10 14:31:11,929 151 <module>         ###################### lgbm end ########################
-2020-06-10 14:31:11,929 152 <module>         
+2020-06-10 16:15:31,052  31 <module>         __main__
+2020-06-10 16:15:31,053  32 <module>         ##########################################################
+2020-06-10 16:15:31,053  33 <module>         #                        start                           #
+2020-06-10 16:15:31,053  34 <module>         ##########################################################
+2020-06-10 16:15:31,053  54 <module>         ###################### lgbm_p start ########################
+2020-06-10 16:15:31,053  63 <module>         {'n_fold': 1, 'first_day': 350, 'alphas': [1.028]}
+2020-06-10 16:15:31,053  88 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.025, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}
+2020-06-10 16:15:31,053  34 load_data        load_data start
+2020-06-10 16:15:34,052 141 _init_num_threads NumExpr defaulting to 8 threads.
+2020-06-10 16:15:34,095  56 load_data        start_day:350
+2020-06-10 16:15:43,223  66 load_data        self.dt_org.shape:(30490, 1570)
+2020-06-10 16:15:43,223  67 load_data        load_data end
+2020-06-10 16:15:43,223  58 run_train_cv     lgbm_p - start training cv
+2020-06-10 16:15:43,223  67 run_train_cv     lgbm_p fold 0 - start training
+2020-06-10 16:15:43,223 114 train_fold       learning start
+2020-06-10 16:15:43,223  73 create_dt        start_day:350
+2020-06-10 16:15:43,454  81 create_dt        dt.shape:(30490, 1570)
+2020-06-10 16:15:43,460 100 create_dt        dt.melt dt.merge
+2020-06-10 16:16:08,609 121 create_dt        create_dt end
+2020-06-10 16:20:45,467  82 train            choice_size: 2000000
+2020-06-10 17:35:27,795  69 run_train_cv     lgbm_p fold 0 - end training - score 0
+2020-06-10 17:35:30,152  86 run_train_cv     lgbm_p - end training cv - score 0.0
+2020-06-10 17:35:30,156 153 run_predict_cv   ######## lgbm_p - start prediction cv ######## 
+2020-06-10 17:35:30,156 159 run_predict_cv   ######## lgbm_p - start prediction fold:0 
+2020-06-10 17:35:30,638  73 create_dt        start_day:1856
+2020-06-10 17:35:30,662  81 create_dt        dt.shape:(30490, 64)
+2020-06-10 17:35:30,679 100 create_dt        dt.melt dt.merge
+2020-06-10 17:35:34,056 121 create_dt        create_dt end
+2020-06-10 17:35:34,848 173 predict          predict icount:0 alpha:1.028
+2020-06-10 17:35:35,024 179 predict          predict tdelta:0, day: 2016-04-25 00:00:00
+2020-06-10 17:35:38,984 179 predict          predict tdelta:1, day: 2016-04-26 00:00:00
+2020-06-10 17:35:42,614 179 predict          predict tdelta:2, day: 2016-04-27 00:00:00
+2020-06-10 17:35:46,190 179 predict          predict tdelta:3, day: 2016-04-28 00:00:00
+2020-06-10 17:35:49,712 179 predict          predict tdelta:4, day: 2016-04-29 00:00:00
+2020-06-10 17:35:53,199 179 predict          predict tdelta:5, day: 2016-04-30 00:00:00
+2020-06-10 17:35:56,765 179 predict          predict tdelta:6, day: 2016-05-01 00:00:00
+2020-06-10 17:36:00,303 179 predict          predict tdelta:7, day: 2016-05-02 00:00:00
+2020-06-10 17:36:03,835 179 predict          predict tdelta:8, day: 2016-05-03 00:00:00
+2020-06-10 17:36:07,392 179 predict          predict tdelta:9, day: 2016-05-04 00:00:00
+2020-06-10 17:36:11,036 179 predict          predict tdelta:10, day: 2016-05-05 00:00:00
+2020-06-10 17:36:14,559 179 predict          predict tdelta:11, day: 2016-05-06 00:00:00
+2020-06-10 17:36:18,139 179 predict          predict tdelta:12, day: 2016-05-07 00:00:00
+2020-06-10 17:36:21,648 179 predict          predict tdelta:13, day: 2016-05-08 00:00:00
+2020-06-10 17:36:25,148 179 predict          predict tdelta:14, day: 2016-05-09 00:00:00
+2020-06-10 17:36:28,700 179 predict          predict tdelta:15, day: 2016-05-10 00:00:00
+2020-06-10 17:36:32,254 179 predict          predict tdelta:16, day: 2016-05-11 00:00:00
+2020-06-10 17:36:35,787 179 predict          predict tdelta:17, day: 2016-05-12 00:00:00
+2020-06-10 17:36:39,324 179 predict          predict tdelta:18, day: 2016-05-13 00:00:00
+2020-06-10 17:36:42,854 179 predict          predict tdelta:19, day: 2016-05-14 00:00:00
+2020-06-10 17:36:46,350 179 predict          predict tdelta:20, day: 2016-05-15 00:00:00
+2020-06-10 17:36:49,913 179 predict          predict tdelta:21, day: 2016-05-16 00:00:00
+2020-06-10 17:36:53,475 179 predict          predict tdelta:22, day: 2016-05-17 00:00:00
+2020-06-10 17:36:57,046 179 predict          predict tdelta:23, day: 2016-05-18 00:00:00
+2020-06-10 17:37:00,632 179 predict          predict tdelta:24, day: 2016-05-19 00:00:00
+2020-06-10 17:37:04,186 179 predict          predict tdelta:25, day: 2016-05-20 00:00:00
+2020-06-10 17:37:07,736 179 predict          predict tdelta:26, day: 2016-05-21 00:00:00
+2020-06-10 17:37:11,258 179 predict          predict tdelta:27, day: 2016-05-22 00:00:00
+2020-06-10 17:37:15,886 225 predict          icount:0, alpha:1.028, weight:1.0
+2020-06-10 17:37:16,164 240 predict          all row: 60980 , validation row: 30490
+2020-06-10 17:37:16,877 177 run_predict_cv   <score_RMSE>: 2.129728965345718
+2020-06-10 17:37:16,877 186 run_predict_cv   evaluator:WRMSSEE
+2020-06-10 17:37:34,198 189 run_predict_cv   evaluator.score
+2020-06-10 17:39:34,917 191 run_predict_cv   <score_WRMSSE>0.7095133073560517 <score_RMSE>2.129728965345718
+2020-06-10 17:39:34,917 193 run_predict_cv   params :{'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.025, 'sub_row': 0.75, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100}  params_env :{'n_fold': 1, 'first_day': 350, 'alphas': [1.028]}
+2020-06-10 17:39:34,969 203 run_predict_cv   ######## lgbm_p - end prediction fold:0 
+2020-06-10 17:39:35,508 207 run_predict_cv   ######## lgbm_p - end prediction cv ######## 
+2020-06-10 17:39:38,645  98 <module>         ###################### lgbm_p end ########################
+2020-06-10 17:39:38,645  99 <module>         
