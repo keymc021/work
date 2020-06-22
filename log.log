@@ -1,72 +1,72 @@
-2020-06-22 12:28:08,097  31 <module>         __main__
-2020-06-22 12:28:08,097  32 <module>         ##########################################################
-2020-06-22 12:28:08,097  33 <module>         #                        start                           #
-2020-06-22 12:28:08,097  34 <module>         ##########################################################
-2020-06-22 12:28:08,097  54 <module>         ###################### lgbm_p start ########################
-2020-06-22 12:28:08,097  71 <module>         {'n_fold': 1, 'first_day': 350, 'tr_last': 1885, 'random_seed': 777, 'alpha': 1.0, 'aggrigation': 0}
-2020-06-22 12:28:08,097 102 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100, 'device': 'cpu'}
-2020-06-22 12:28:08,097  55 load_data        load_data start
-2020-06-22 12:28:11,309 129 _init_num_threads Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
-2020-06-22 12:28:11,309 141 _init_num_threads NumExpr defaulting to 8 threads.
-2020-06-22 12:28:11,354  84 load_data        first_day:350
-2020-06-22 12:28:15,789  96 load_data        self.dt_org.shape:(30490, 1570)
-2020-06-22 12:28:15,789  97 load_data        load_data end
-2020-06-22 12:28:15,790  58 run_train_cv     lgbm_p - start training cv
-2020-06-22 12:28:15,790  67 run_train_cv     lgbm_p fold 0 - start training
-2020-06-22 12:28:15,790 112 train_fold       learning start
-2020-06-22 12:28:15,790 104 create_dt        start_day:350
-2020-06-22 12:28:16,025 112 create_dt        dt.shape:(30490, 1542)
-2020-06-22 12:28:16,030 145 create_dt        dt.melt dt.merge
-2020-06-22 12:28:44,121 169 create_dt        create_dt end
-2020-06-22 12:35:02,648  50 train            df.shape( after df.dropna ): (38905047, 29)
-2020-06-22 12:35:04,267  70 train            x_train.index.values.shape:(38905047,)
-2020-06-22 12:35:04,267  84 train            choice_size: 4000000
-2020-06-22 13:06:42,469  69 run_train_cv     lgbm_p fold 0 - end training - score 0
-2020-06-22 13:06:43,428  86 run_train_cv     lgbm_p - end training cv - score 0.0
-2020-06-22 13:06:43,430 151 run_predict_cv   ######## lgbm_p - start prediction cv ######## 
-2020-06-22 13:06:43,431 159 run_predict_cv   alpha: 1.0 
-2020-06-22 13:06:43,431 163 run_predict_cv   ######## lgbm_p - start prediction fold:0 
-2020-06-22 13:06:43,915 104 create_dt        start_day:1491
-2020-06-22 13:06:44,110 112 create_dt        dt.shape:(30490, 401)
-2020-06-22 13:06:44,129 145 create_dt        dt.melt dt.merge
-2020-06-22 13:06:53,738 169 create_dt        create_dt end
-2020-06-22 13:06:57,572 168 predict          predict  alpha:1.0
-2020-06-22 13:06:59,310 177 predict          predict tdelta:0, day: 2016-03-28 00:00:00
-2020-06-22 13:07:11,559 177 predict          predict tdelta:1, day: 2016-03-29 00:00:00
-2020-06-22 13:07:22,072 177 predict          predict tdelta:2, day: 2016-03-30 00:00:00
-2020-06-22 13:07:32,569 177 predict          predict tdelta:3, day: 2016-03-31 00:00:00
-2020-06-22 13:07:43,021 177 predict          predict tdelta:4, day: 2016-04-01 00:00:00
-2020-06-22 13:07:53,561 177 predict          predict tdelta:5, day: 2016-04-02 00:00:00
-2020-06-22 13:08:04,078 177 predict          predict tdelta:6, day: 2016-04-03 00:00:00
-2020-06-22 13:08:14,640 177 predict          predict tdelta:7, day: 2016-04-04 00:00:00
-2020-06-22 13:08:25,306 177 predict          predict tdelta:8, day: 2016-04-05 00:00:00
-2020-06-22 13:08:35,849 177 predict          predict tdelta:9, day: 2016-04-06 00:00:00
-2020-06-22 13:08:46,331 177 predict          predict tdelta:10, day: 2016-04-07 00:00:00
-2020-06-22 13:08:56,808 177 predict          predict tdelta:11, day: 2016-04-08 00:00:00
-2020-06-22 13:09:07,329 177 predict          predict tdelta:12, day: 2016-04-09 00:00:00
-2020-06-22 13:09:17,859 177 predict          predict tdelta:13, day: 2016-04-10 00:00:00
-2020-06-22 13:09:28,461 177 predict          predict tdelta:14, day: 2016-04-11 00:00:00
-2020-06-22 13:09:39,081 177 predict          predict tdelta:15, day: 2016-04-12 00:00:00
-2020-06-22 13:09:49,521 177 predict          predict tdelta:16, day: 2016-04-13 00:00:00
-2020-06-22 13:09:59,981 177 predict          predict tdelta:17, day: 2016-04-14 00:00:00
-2020-06-22 13:10:10,413 177 predict          predict tdelta:18, day: 2016-04-15 00:00:00
-2020-06-22 13:10:20,783 177 predict          predict tdelta:19, day: 2016-04-16 00:00:00
-2020-06-22 13:10:31,250 177 predict          predict tdelta:20, day: 2016-04-17 00:00:00
-2020-06-22 13:10:41,618 177 predict          predict tdelta:21, day: 2016-04-18 00:00:00
-2020-06-22 13:10:52,229 177 predict          predict tdelta:22, day: 2016-04-19 00:00:00
-2020-06-22 13:11:02,738 177 predict          predict tdelta:23, day: 2016-04-20 00:00:00
-2020-06-22 13:11:13,268 177 predict          predict tdelta:24, day: 2016-04-21 00:00:00
-2020-06-22 13:11:23,956 177 predict          predict tdelta:25, day: 2016-04-22 00:00:00
-2020-06-22 13:11:34,707 177 predict          predict tdelta:26, day: 2016-04-23 00:00:00
-2020-06-22 13:11:45,249 177 predict          predict tdelta:27, day: 2016-04-24 00:00:00
-2020-06-22 13:11:56,190 247 predict          all row: 60980 , validation row: 30490
-2020-06-22 13:11:56,401 187 run_predict_cv   <score_RMSE>: 3.8514292765386213
-2020-06-22 13:11:56,402 196 run_predict_cv   evaluator:WRMSSEE
-2020-06-22 13:12:11,267 200 run_predict_cv   evaluator.score
-2020-06-22 13:14:13,827 202 run_predict_cv   <score_WRMSSE>5.1056606960208955 <score_RMSE>3.8514292765386213
-2020-06-22 13:14:13,828 204 run_predict_cv   para:{'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100, 'device': 'cpu'}
-2020-06-22 13:14:13,828 205 run_predict_cv   para:{'n_fold': 1, 'first_day': 350, 'tr_last': 1885, 'random_seed': 777, 'alpha': 1.0, 'aggrigation': 0}
-2020-06-22 13:14:13,881 214 run_predict_cv   ######## lgbm_p - end prediction fold:0 
-2020-06-22 13:14:14,000 218 run_predict_cv   ######## lgbm_p - end prediction cv ######## 
-2020-06-22 13:14:17,173 113 <module>         ###################### lgbm_p end ########################
-2020-06-22 13:14:17,173 114 <module>         
+2020-06-22 16:14:04,819  31 <module>         __main__
+2020-06-22 16:14:04,819  32 <module>         ##########################################################
+2020-06-22 16:14:04,819  33 <module>         #                        start                           #
+2020-06-22 16:14:04,820  34 <module>         ##########################################################
+2020-06-22 16:14:04,820  54 <module>         ###################### lgbm_p start ########################
+2020-06-22 16:14:04,820  71 <module>         {'n_fold': 1, 'first_day': 350, 'tr_last': 1885, 'random_seed': 777, 'alpha': 1.0, 'aggrigation': 0}
+2020-06-22 16:14:04,820 102 <module>         {'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100, 'device': 'cpu'}
+2020-06-22 16:14:04,820  56 load_data        load_data start
+2020-06-22 16:14:07,894 129 _init_num_threads Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2020-06-22 16:14:07,894 141 _init_num_threads NumExpr defaulting to 8 threads.
+2020-06-22 16:14:07,939  85 load_data        first_day:350
+2020-06-22 16:14:12,307  97 load_data        self.dt_org.shape:(30490, 1570)
+2020-06-22 16:14:12,307  98 load_data        load_data end
+2020-06-22 16:14:12,308  58 run_train_cv     lgbm_p - start training cv
+2020-06-22 16:14:12,308  67 run_train_cv     lgbm_p fold 0 - start training
+2020-06-22 16:14:12,308 112 train_fold       learning start
+2020-06-22 16:14:12,308 105 create_dt        start_day:350
+2020-06-22 16:14:12,522 113 create_dt        dt.shape:(30490, 1542)
+2020-06-22 16:14:12,528 146 create_dt        dt.melt dt.merge
+2020-06-22 16:14:40,758 170 create_dt        create_dt end
+2020-06-22 16:21:28,872  50 train            df.shape( after df.dropna ): (38905047, 29)
+2020-06-22 16:21:30,489  70 train            x_train.index.values.shape:(38905047,)
+2020-06-22 16:21:30,489  84 train            choice_size: 4000000
+2020-06-22 16:58:34,841  69 run_train_cv     lgbm_p fold 0 - end training - score 0
+2020-06-22 16:58:37,073  86 run_train_cv     lgbm_p - end training cv - score 0.0
+2020-06-22 16:58:37,076 151 run_predict_cv   ######## lgbm_p - start prediction cv ######## 
+2020-06-22 16:58:37,076 159 run_predict_cv   alpha: 1.0 
+2020-06-22 16:58:37,076 163 run_predict_cv   ######## lgbm_p - start prediction fold:0 
+2020-06-22 16:58:37,784 105 create_dt        start_day:1491
+2020-06-22 16:58:37,972 113 create_dt        dt.shape:(30490, 401)
+2020-06-22 16:58:37,990 146 create_dt        dt.melt dt.merge
+2020-06-22 16:58:47,371 170 create_dt        create_dt end
+2020-06-22 16:58:51,252 168 predict          predict  alpha:1.0
+2020-06-22 16:58:53,000 177 predict          predict tdelta:0, day: 2016-03-28 00:00:00
+2020-06-22 16:59:06,936 177 predict          predict tdelta:1, day: 2016-03-29 00:00:00
+2020-06-22 16:59:17,942 177 predict          predict tdelta:2, day: 2016-03-30 00:00:00
+2020-06-22 16:59:28,886 177 predict          predict tdelta:3, day: 2016-03-31 00:00:00
+2020-06-22 16:59:39,762 177 predict          predict tdelta:4, day: 2016-04-01 00:00:00
+2020-06-22 16:59:50,596 177 predict          predict tdelta:5, day: 2016-04-02 00:00:00
+2020-06-22 17:00:01,538 177 predict          predict tdelta:6, day: 2016-04-03 00:00:00
+2020-06-22 17:00:12,412 177 predict          predict tdelta:7, day: 2016-04-04 00:00:00
+2020-06-22 17:00:23,343 177 predict          predict tdelta:8, day: 2016-04-05 00:00:00
+2020-06-22 17:00:34,237 177 predict          predict tdelta:9, day: 2016-04-06 00:00:00
+2020-06-22 17:00:45,071 177 predict          predict tdelta:10, day: 2016-04-07 00:00:00
+2020-06-22 17:00:55,888 177 predict          predict tdelta:11, day: 2016-04-08 00:00:00
+2020-06-22 17:01:06,726 177 predict          predict tdelta:12, day: 2016-04-09 00:00:00
+2020-06-22 17:01:17,576 177 predict          predict tdelta:13, day: 2016-04-10 00:00:00
+2020-06-22 17:01:28,524 177 predict          predict tdelta:14, day: 2016-04-11 00:00:00
+2020-06-22 17:01:39,407 177 predict          predict tdelta:15, day: 2016-04-12 00:00:00
+2020-06-22 17:01:50,265 177 predict          predict tdelta:16, day: 2016-04-13 00:00:00
+2020-06-22 17:02:01,048 177 predict          predict tdelta:17, day: 2016-04-14 00:00:00
+2020-06-22 17:02:12,036 177 predict          predict tdelta:18, day: 2016-04-15 00:00:00
+2020-06-22 17:02:22,862 177 predict          predict tdelta:19, day: 2016-04-16 00:00:00
+2020-06-22 17:02:33,731 177 predict          predict tdelta:20, day: 2016-04-17 00:00:00
+2020-06-22 17:02:44,617 177 predict          predict tdelta:21, day: 2016-04-18 00:00:00
+2020-06-22 17:02:55,459 177 predict          predict tdelta:22, day: 2016-04-19 00:00:00
+2020-06-22 17:03:06,292 177 predict          predict tdelta:23, day: 2016-04-20 00:00:00
+2020-06-22 17:03:17,096 177 predict          predict tdelta:24, day: 2016-04-21 00:00:00
+2020-06-22 17:03:27,969 177 predict          predict tdelta:25, day: 2016-04-22 00:00:00
+2020-06-22 17:03:38,735 177 predict          predict tdelta:26, day: 2016-04-23 00:00:00
+2020-06-22 17:03:49,583 177 predict          predict tdelta:27, day: 2016-04-24 00:00:00
+2020-06-22 17:04:03,404 248 predict          all row: 60980 , validation row: 30490
+2020-06-22 17:04:03,631 187 run_predict_cv   <score_RMSE>: 2.112628321528339
+2020-06-22 17:04:03,631 196 run_predict_cv   evaluator:WRMSSEE
+2020-06-22 17:04:18,654 200 run_predict_cv   evaluator.score
+2020-06-22 17:06:20,218 202 run_predict_cv   <score_WRMSSE>0.6560368938314874 <score_RMSE>2.112628321528339
+2020-06-22 17:06:20,218 204 run_predict_cv   para:{'objective': 'poisson', 'metric': 'rmse', 'learning_rate': 0.075, 'bagging_freq': 1, 'lambda_l2': 0.1, 'verbosity': 1, 'num_iterations': 1200, 'num_leaves': 128, 'min_data_in_leaf': 100, 'device': 'cpu'}
+2020-06-22 17:06:20,218 205 run_predict_cv   para:{'n_fold': 1, 'first_day': 350, 'tr_last': 1885, 'random_seed': 777, 'alpha': 1.0, 'aggrigation': 0}
+2020-06-22 17:06:20,271 214 run_predict_cv   ######## lgbm_p - end prediction fold:0 
+2020-06-22 17:06:20,799 218 run_predict_cv   ######## lgbm_p - end prediction cv ######## 
+2020-06-22 17:06:23,877 113 <module>         ###################### lgbm_p end ########################
+2020-06-22 17:06:23,877 114 <module>         
